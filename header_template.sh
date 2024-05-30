@@ -18,8 +18,7 @@
 ############################################################
 # Help                                                     #
 ############################################################
-Help()
-{
+hlp() {
    # Display Help
    echo "Add description of the script functions here."
    echo
@@ -31,7 +30,6 @@ Help()
    echo "V     Print software version and exit."
    echo
 }
-
 
 ############################################################
 # Main program                                             #
@@ -46,7 +44,7 @@ Help()
 while getopts ":h" option; do
    case $option in
       h) # display Help
-         Help
+         help
          exit;;
    esac
 done
